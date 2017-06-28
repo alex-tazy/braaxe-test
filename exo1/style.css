@@ -1,0 +1,297 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url("font-montserrat/Montserrat-Regular.otf") format("opentype");
+}
+@font-face {
+    font-family: Montserrat;
+    font-weight: bold;
+    src: url("font-montserrat/Montserrat-Bold.otf") format("opentype");
+}
+body {
+	padding: 0;
+	margin: 0;
+	background: url("bg.png") white center no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	font-family: 'Montserrat', sans-serif;
+}
+body>div {
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+}
+.interface {
+	max-width: 260px;
+	max-height: 503px;
+	margin-left: 55px;
+	text-align: center;
+	position: relative;
+}
+.marches {
+	padding: 10px 24px 0 24px;
+	background: #fff;
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.marches > h1 {
+	color: #5948d4;
+	font-size: 20px;
+    line-height: 22px;
+    font-weight: normal;
+}
+.marches > h1 > small {
+	font-size: 15px;
+	color: #c8c2f7;
+	font-weight: normal;
+}
+.marches:before {
+	content: "événement";
+    display: block;
+    background: #e4365f;
+    padding: 2px 11px;
+    color: #fff;
+    font-size: 14px;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -21px;
+    top: 140px;
+    border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.lorem {
+	color: #bab2f5;
+	font-size: 14px;
+}
+.logo {
+	background: url(logo.png);
+	width: 100px;
+	height: 106px;
+	margin: 0 auto;
+	margin-top: -68px;
+}
+.curieux {
+	background: #f43a62;
+	border: 4px solid #fff;
+	display: inline-block;
+	border-radius: 22px;
+	padding: 2px 14px;
+	color: #fff;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	font-size: 13.5px;
+    font-weight: 100;
+}
+.icon-vert {
+	width: 8px;
+	height: 8px;
+	background: #29ffdb;
+	transform: rotate(45deg);
+	margin: 0 auto;
+}
+.house {
+	background: url(home.png);
+	height: 120px;
+	margin-bottom: 16px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-top: -15px;
+}
+.location {
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+	position: relative;
+	border-radius: 5px;
+}
+.location:before {
+	    content: "Pile poil";
+    display: block;
+    background: #fff770;
+    padding: 2px 23px;
+    color: #5343cd;
+    font-size: 14px;
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -21px;
+    top: 134px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.carte {
+	color: #b5adf2;
+	font-size: 14px;
+	background: #fff;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	padding: 5px 0;
+	margin: 0;
+    letter-spacing: 1px;
+}
+.pin-container {
+	height: 90px;
+	background: rgba(255, 255, 255, 0.8);
+	display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 8px;
+}
+.pin {
+	background: url(pin.png) no-repeat center;
+	width: 50px;
+	height: 66px;
+}
+.footer {
+	color: #fff;
+	font-size: 14px;
+	margin: 0;
+	background: linear-gradient(to right, #7f74d4, #5948d4);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding: 5px 0;
+    letter-spacing: 1px;
+}
+.profil {
+	max-width: 360px;
+	max-height: 480px;
+	margin-right: 58px;
+	display: flex;
+	flex-direction: column;
+}
+.profil .infos-container {
+	background: linear-gradient(to right, #7f74d4, #5948d4);
+	padding: 12px 20px;
+	display: inline-block;
+	height: 146px;
+	position: relative;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+.profil .badges {
+	background: #e6e4f5;
+	padding: 12px 23px;
+	height: 160px;
+}
+.badges-content {
+	text-align: center;
+}
+.badges > p, .succes > p {
+	font-size: 14px;
+}
+.badges p, .succes p {
+	color: #5847d3;
+	margin: 0;
+}
+.badges small, .succes small {
+	color: #c6c1f0;
+}
+.photo {
+	background: url(profil.jpg) no-repeat center;
+	background-size: 105%;
+	width: 114px;
+	height: 114px;
+	border-radius: 50%;
+	border: 5px solid #fff;
+	display: inline-block;
+	margin: 3px;
+}
+.infos {
+	margin-left: 18px;
+	display: inline-block;
+	font-size: 15px;
+	vertical-align: top;
+}
+.name {
+	color: #fff;
+	padding: 13px 0 15px 0;
+	font-size: 1.1em;
+}
+.name small {
+	color: #29ffdb;
+	font-size: 0.75em;
+}
+.etapes {
+	color: #fff69a;
+	letter-spacing: 1px;
+	font-size: 17px;
+}
+.connexion {
+	color: #b2ace3;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.croix {
+  position: absolute;
+  right: 32px;
+  top: 28px;
+  width: 13px;
+  height: 13px;
+}
+.croix:before, .croix:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 18px;
+    width: 1px;
+    background-color: #fff;
+}
+.croix:before {
+  transform: rotate(45deg);
+}
+.croix:after {
+  transform: rotate(-45deg);
+}
+.infos p {
+	margin: 0;
+}
+.succes {
+	background: #fff;
+	height: 170px;
+	padding: 12px 23px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+.badges-content > div, .succes-content > div {
+	display: inline-block;
+	font-size: 10px;
+	color: #6f62d8;
+	padding: 7px;
+}
+.icon {
+	margin-bottom: 5px;
+}
+.touriste, .premiers-pas {
+	padding-left: 0!important;
+}
+.marathonien, .copains {
+	padding-right: 0!important;
+}
+.succes-content {
+	text-align: center;
+}
+.succes-content > div {
+	padding: 9px 10px;
+}
