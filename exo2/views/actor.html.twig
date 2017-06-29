@@ -1,0 +1,21 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}{{ person.person_name }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <h3>{{ person.person_firstName }} {{ person.person_name }}</h3>
+            {% if movies %}
+            <p>Films:</p>
+            <ul>
+                {% for movie in movies %}
+                    <li><a href="{{ path('show', { 'id': movie.movie_id }) }}">{{ movie.movie_title }}</a></li>
+                {% endfor %}
+            </ul>
+            {% else %}
+            <p>No movies</p>
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

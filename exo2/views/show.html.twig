@@ -11,7 +11,13 @@
         </div>
         <div class="col-md-5">
             <h3>{{ movie.movie_title }}</h3>
-            <h4>{{ director.person_firstName }} {{ director.person_name }}</h4>
+            <h4>Director: {{ director.person_firstName }} {{ director.person_name }}</h4>
+            <p>Actors:</p>
+            <ul>
+                {% for actor in actors %}
+                    <li><a href="{{ path('actor', { 'id': actor.person_id }) }}">{{ actor.person_firstName }} {{ actor.person_name }}</a></li>
+                {% endfor %}
+            </ul>
             <p>{{ movie.movie_synopsis }}</p>
         </div>
     </div>

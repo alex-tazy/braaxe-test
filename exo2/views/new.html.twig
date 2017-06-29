@@ -19,6 +19,14 @@
                     </select>
                 </div>
                 <div class="form-group">
+                    <label>Actors (ctrl + click for multiselect):</label>
+                    <select multiple class="form-control" name="actors[]">
+                        {% for director in directors %}
+                            <option value="{{ director.person_id }}">{{ director.person_firstName }} {{ director.person_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
                     <label>Synopsis:</label>
                     <textarea name="synopsis" class="form-control"></textarea>
                 </div>
