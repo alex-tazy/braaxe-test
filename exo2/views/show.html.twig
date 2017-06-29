@@ -1,0 +1,18 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}{{ movie.movie_title }}{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-7">
+            <a target="_blank" href="#">
+                <img class="img-responsive" src="../{{ movie.movie_poster }}" alt="{{ movie.movie_title }}">
+            </a>
+        </div>
+        <div class="col-md-5">
+            <h3>{{ movie.movie_title }}</h3>
+            <h4>{{ director.person_firstName }} {{ director.person_name }}</h4>
+            <p>{{ movie.movie_synopsis }}</p>
+        </div>
+    </div>
+{% endblock %}

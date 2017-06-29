@@ -1,0 +1,39 @@
+{% extends "layout.html.twig" %}
+
+{% block title %}Add a movie{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <form action="{{ path('add') }}" class="form">
+                <div class="form-group">
+                    <label>Title:</label>
+                    <input type="text" name="title" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Director:</label>
+                    <select class="form-control" name="director">
+                        {% for director in directors %}
+                            <option value="{{ director.person_id }}">{{ director.person_firstName }} {{ director.person_name }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Synopsis:</label>
+                    <textarea name="synopsis" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Release date</label>
+                    <input type="date" name="date" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Poster:</label>
+                    <input type="file" name="poster" class="form-control">
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
